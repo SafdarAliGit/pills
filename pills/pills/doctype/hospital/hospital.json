@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-31 20:18:31.148505",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_jp9j",
+  "region",
+  "hospital_name",
+  "city",
+  "address",
+  "unit_center_name",
+  "longitude",
+  "latitude",
+  "available_beds",
+  "total_no_of_beds",
+  "lon",
+  "lat"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_jp9j",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Data",
+   "label": "Region"
+  },
+  {
+   "fieldname": "hospital_name",
+   "fieldtype": "Data",
+   "label": "Hospital Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "unit_center_name",
+   "fieldtype": "Data",
+   "label": "Unit Center Name"
+  },
+  {
+   "fieldname": "total_no_of_beds",
+   "fieldtype": "Int",
+   "label": "Total No of Beds"
+  },
+  {
+   "fieldname": "available_beds",
+   "fieldtype": "Data",
+   "label": "Available Beds"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "lon",
+   "fieldtype": "Float",
+   "label": "lon",
+   "precision": "9"
+  },
+  {
+   "fieldname": "lat",
+   "fieldtype": "Float",
+   "label": "lat",
+   "precision": "9"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-27 17:16:49.744135",
+ "modified_by": "Administrator",
+ "module": "pills",
+ "name": "Hospital",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Healthcare Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

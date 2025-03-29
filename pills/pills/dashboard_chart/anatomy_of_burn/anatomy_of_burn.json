@@ -1,0 +1,37 @@
+{
+ "based_on": "",
+ "chart_name": "Anatomy Of Burn",
+ "chart_type": "Report",
+ "creation": "2024-11-11 13:35:11.503670",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "dynamic_filters_json": "{}",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "modified": "2024-11-11 13:35:11.503670",
+ "modified_by": "Administrator",
+ "module": "pills",
+ "name": "Anatomy Of Burn",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "parent_document_type": "",
+ "report_name": "Anatomy Of Burn",
+ "roles": [],
+ "source": "",
+ "time_interval": "Daily",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "value_based_on": "",
+ "x_field": "anatomy_of_burn",
+ "y_axis": [
+  {
+   "color": "#B4CD29",
+   "y_field": "count"
+  }
+ ]
+}

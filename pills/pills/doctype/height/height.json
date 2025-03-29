@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:height",
+ "creation": "2025-03-08 13:52:12.996017",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "height"
+ ],
+ "fields": [
+  {
+   "fieldname": "height",
+   "fieldtype": "Data",
+   "label": "Height",
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-08 13:54:17.371961",
+ "modified_by": "Administrator",
+ "module": "pills",
+ "name": "Height",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

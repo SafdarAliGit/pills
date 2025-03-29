@@ -1,0 +1,47 @@
+{
+ "cards": [
+  {
+   "card": "No Of Female Patients"
+  },
+  {
+   "card": "No Of Male Patients"
+  },
+  {
+   "card": "No Of Below 18 Patients"
+  },
+  {
+   "card": "No Of Below 5 Years Patients"
+  },
+  {
+   "card": "No of Above 18 Years Patients"
+  }
+ ],
+ "chart_options": "",
+ "charts": [
+  {
+   "chart": "Admission Reasons",
+   "width": "Half"
+  },
+  {
+   "chart": "Cause Of Burns",
+   "width": "Half"
+  },
+  {
+   "chart": "Education",
+   "width": "Half"
+  }
+ ],
+ "creation": "2025-02-02 19:17:21.348749",
+ "dashboard_name": "National Burn Pakistan",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2025-02-02 21:48:16.144970",
+ "modified_by": "Administrator",
+ "module": "pills",
+ "name": "National Burn Pakistan",
+ "owner": "Administrator",
+ "route": "public-registry"
+}

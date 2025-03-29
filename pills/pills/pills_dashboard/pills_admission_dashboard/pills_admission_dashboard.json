@@ -1,0 +1,68 @@
+{
+ "cards": [
+  {
+   "card": "Total Patient Admitted-1"
+  },
+  {
+   "card": "No of Beds"
+  },
+  {
+   "card": "Total Discharged Patients"
+  }
+ ],
+ "chart_options": "",
+ "charts": [
+  {
+   "chart": "Admission Chart",
+   "width": "Half"
+  },
+  {
+   "chart": "Discharge Chart",
+   "width": "Half"
+  },
+  {
+   "chart": "Reason of Admission",
+   "width": "Full"
+  },
+  {
+   "chart": "Patient Marital Status",
+   "width": "Half"
+  },
+  {
+   "chart": "Patient Education Chart",
+   "width": "Half"
+  },
+  {
+   "chart": "Weight And Height Chart",
+   "width": "Half"
+  },
+  {
+   "chart": "Cause Of Burn",
+   "width": "Half"
+  },
+  {
+   "chart": "Occupation Of Patient",
+   "width": "Half"
+  },
+  {
+   "chart": "Respondent Of Patient",
+   "width": "Half"
+  },
+  {
+   "chart": "Anatomy Of Burn",
+   "width": "Half"
+  }
+ ],
+ "creation": "2024-11-01 17:06:24.772952",
+ "dashboard_name": "Pills Admission Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2024-11-11 13:35:12.866188",
+ "modified_by": "Administrator",
+ "module": "pills",
+ "name": "Pills Admission Dashboard",
+ "owner": "Administrator"
+}

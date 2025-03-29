@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:registry",
+ "creation": "2024-10-16 17:08:33.254205",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_gvzp",
+  "registry"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_gvzp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "registry",
+   "fieldtype": "Data",
+   "label": "Registry",
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-16 17:09:12.840974",
+ "modified_by": "Administrator",
+ "module": "pills",
+ "name": "Registry",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "registry"
+}

@@ -1,0 +1,105 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"S3NEMjVWVv\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Burns Registry</span>\",\"col\":12}},{\"id\":\"lWn_lGHaXk\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Burn Admission Assessment\",\"col\":3}},{\"id\":\"n3Giz4pZ3F\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Registry\",\"col\":3}},{\"id\":\"F1fIDI53Yi\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hospital\",\"col\":3}},{\"id\":\"GkgyYzmspO\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hospital Discharge Detail\",\"col\":3}},{\"id\":\"r9SR4ayDIe\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"NBP Dashboard\",\"col\":3}},{\"id\":\"YtmBg7fokk\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Patient Admission \",\"col\":3}},{\"id\":\"ro-UqW9qrJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hospital\",\"col\":3}},{\"id\":\"VLSPrMJVPl\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Patient admission\",\"col\":3}},{\"id\":\"uO7CyX06rv\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"PILL Dashboard\",\"col\":3}},{\"id\":\"nij28Wmo2w\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Patient\",\"col\":4}},{\"id\":\"PzAMnsxul4\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Patient Encounter\",\"col\":4}},{\"id\":\"9YEW6OCiyP\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Patient Appointment\",\"col\":4}}]",
+ "creation": "2024-10-15 12:08:06.623118",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "healthcare",
+ "idx": 34,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Burns Registry",
+ "links": [],
+ "modified": "2025-03-25 15:30:32.864191",
+ "modified_by": "Administrator",
+ "module": "pills",
+ "name": "Burns Registry",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "Patient",
+   "label": "Patient",
+   "quick_list_filter": "[]"
+  },
+  {
+   "document_type": "Patient Encounter",
+   "label": "Patient Encounter",
+   "quick_list_filter": "[]"
+  },
+  {
+   "document_type": "Patient Appointment",
+   "label": "Patient Appointment",
+   "quick_list_filter": "[]"
+  }
+ ],
+ "roles": [
+  {
+   "role": "Healthcare Administrator"
+  }
+ ],
+ "sequence_id": 39.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "NBP Dashboard",
+   "link_to": "national-burn-registry-pakistan",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Registry",
+   "link_to": "Registry",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Burn Admission Assessment",
+   "link_to": "Burn Admission Assessment",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Patient Admission ",
+   "link_to": "Inpatient Medication Entry",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Hospital",
+   "link_to": "Hospital",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Hospital Discharge Detail",
+   "link_to": "Hospital Discharge Detail",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Patient admission",
+   "link_to": "Inpatient Medication Entry",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Burns Registry"
+}

@@ -1,0 +1,251 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:patient_name-{creation}",
+ "creation": "2024-10-16 13:21:57.319337",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_zift",
+  "naming_series",
+  "patient_name",
+  "medical_record_number",
+  "hospital",
+  "date_of_discharge",
+  "time_of_discharge",
+  "discharge_status",
+  "discharge_destination",
+  "left_against_medical_advice_lama",
+  "amended_from",
+  "column_break_jyma",
+  "discharged_home_with_disability",
+  "amputation_below_elbow_and_below_knee",
+  "amputation_above_elbow_and_above_knee",
+  "surgery_during_current_hospital_stay",
+  "surgical_procedure_name",
+  "surgical_procedure_date",
+  "total_body_surface_area_of_burn_at_discharge_actual",
+  "complications_during_hospital_stay_section",
+  "septic_shock",
+  "dialysis",
+  "cpr",
+  "neurological",
+  "pulmonary_embolism",
+  "none",
+  "other"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_zift",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "patient_name",
+   "fieldtype": "Data",
+   "label": "Patient Name"
+  },
+  {
+   "fieldname": "date_of_discharge",
+   "fieldtype": "Date",
+   "label": "Date of Discharge"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.discharge_status==\"Alive\"",
+   "fieldname": "dialysis",
+   "fieldtype": "Check",
+   "label": "Dialysis"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.discharge_status==\"Alive\"",
+   "fieldname": "cpr",
+   "fieldtype": "Check",
+   "label": "CPR"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.discharge_status==\"Alive\"",
+   "fieldname": "neurological",
+   "fieldtype": "Check",
+   "label": "Neurological"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.discharge_status==\"Alive\"",
+   "fieldname": "pulmonary_embolism",
+   "fieldtype": "Check",
+   "label": "Pulmonary Embolism"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.discharge_status==\"Alive\"",
+   "fieldname": "none",
+   "fieldtype": "Check",
+   "label": "None"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.discharge_status==\"Alive\"",
+   "fieldname": "other",
+   "fieldtype": "Check",
+   "label": "Other"
+  },
+  {
+   "fieldname": "hospital",
+   "fieldtype": "Link",
+   "label": "Hospital",
+   "options": "Hospital"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Hospital Discharge Detail",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "medical_record_number",
+   "fieldtype": "Data",
+   "label": "Medical Record Number"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "DIS-"
+  },
+  {
+   "fieldname": "time_of_discharge",
+   "fieldtype": "Time",
+   "label": "Time of Discharge"
+  },
+  {
+   "default": "Alive",
+   "fieldname": "discharge_status",
+   "fieldtype": "Select",
+   "label": "Discharge Status",
+   "options": "\nDead\nAlive"
+  },
+  {
+   "depends_on": "eval:doc.discharge_status==\"Alive\"",
+   "fieldname": "discharge_destination",
+   "fieldtype": "Select",
+   "label": "Discharge destination",
+   "options": "\nHome\nICU\nHDU\nWard\nTransfer for specialist care\nDischarge home for end of life care\nOther hospital\nOther"
+  },
+  {
+   "depends_on": "eval:doc.discharge_status==\"Alive\"",
+   "fieldname": "left_against_medical_advice_lama",
+   "fieldtype": "Select",
+   "label": "Left against medical advice (LAMA)",
+   "options": "Yes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.discharge_status==\"Alive\"",
+   "fieldname": "discharged_home_with_disability",
+   "fieldtype": "Select",
+   "label": "Discharged home with disability",
+   "options": "Disfigurement\nMental disability\nPhysical disability\nAmputation\nNone"
+  },
+  {
+   "depends_on": "eval:doc.discharge_status==\"Alive\"",
+   "fieldname": "amputation_below_elbow_and_below_knee",
+   "fieldtype": "Select",
+   "label": "Amputation Below Elbow and Below Knee",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.discharge_status==\"Alive\"",
+   "fieldname": "amputation_above_elbow_and_above_knee",
+   "fieldtype": "Select",
+   "label": "Amputation Above Elbow and Above Knee",
+   "options": "Yes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.discharge_status==\"Alive\"",
+   "fieldname": "surgery_during_current_hospital_stay",
+   "fieldtype": "Select",
+   "label": "Surgery during current hospital stay",
+   "options": "Yes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.discharge_status==\"Alive\"",
+   "fieldname": "surgical_procedure_name",
+   "fieldtype": "Select",
+   "label": "Surgical Procedure name",
+   "options": "Escharotomy\nFasciotomy\nBurn\nWound\nExcision\nTangential\nExcision\nFascial\nExcision\nDebridement\nSkin\nGrafting\nFlap\nAmputation"
+  },
+  {
+   "depends_on": "eval:doc.discharge_status==\"Alive\"",
+   "fieldname": "surgical_procedure_date",
+   "fieldtype": "Date",
+   "label": "Surgical Procedure Date"
+  },
+  {
+   "fieldname": "total_body_surface_area_of_burn_at_discharge_actual",
+   "fieldtype": "Select",
+   "label": "Total body surface area of burn at Discharge (Actual)",
+   "options": "5%\n10%\n15%\n20%\n25%\n30%\n35%\n40%\n45%\n50%\n55%\n60%\n65%\n70%\n75%\n80%\n85%\n90%\n95%\n100%"
+  },
+  {
+   "fieldname": "column_break_jyma",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.discharge_status==\"Alive\"",
+   "fieldname": "complications_during_hospital_stay_section",
+   "fieldtype": "Section Break",
+   "label": "Complications During Hospital Stay"
+  },
+  {
+   "default": "0",
+   "fieldname": "septic_shock",
+   "fieldtype": "Check",
+   "label": "Septic shock"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-03-12 12:14:43.786187",
+ "modified_by": "Administrator",
+ "module": "pills",
+ "name": "Hospital Discharge Detail",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Healthcare Administrator",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "patient_name"
+}

@@ -1,0 +1,1102 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:patient_name-{creation}",
+ "creation": "2024-10-15 16:34:51.343712",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_x1dm",
+  "naming_series",
+  "patient_name",
+  "mrn_id",
+  "medical_record_number",
+  "date_of_birth",
+  "calculated_age",
+  "contact",
+  "sex",
+  "height",
+  "age_html",
+  "height_in_inches",
+  "height_scale",
+  "weight_in_kg",
+  "weight",
+  "age",
+  "6_to_11",
+  "11_to_17",
+  "column_break_7fxb",
+  "date_of_hospital_admission",
+  "time_of_hospital_admission",
+  "date_of_burn_injury",
+  "time_of_burn_injury",
+  "place_of_injury",
+  "arrived_by",
+  "respondent",
+  "hospital",
+  "discharge_status",
+  "column_break_pjnl",
+  "mental_status",
+  "referred_case",
+  "type_of_first_aid_before_coming",
+  "wound_assessed_by_surgeon",
+  "level_of_training_of_surgeon",
+  "marital_status",
+  "registry",
+  "referral_source",
+  "previous_history_of_burns",
+  "under_five_patient_with",
+  "column_break_kxml",
+  "no_of_people_burned_in_incident",
+  "occupation_of_patient",
+  "less_than_fifteen_education_status",
+  "less_than_fifteen_father_education_status",
+  "less_than_fifteen_mother_education_status",
+  "section_break_zkap",
+  "burn_cause",
+  "column_break_rwhh",
+  "fire_occur",
+  "household_section",
+  "cooking",
+  "heating",
+  "lighting",
+  "house_fire_single",
+  "house_fire_multiple",
+  "playing_with_fire",
+  "household_others",
+  "workplace_section",
+  "food_preparation",
+  "petrochemicals",
+  "textiles",
+  "constructions",
+  "agriculture",
+  "fireworksrelated",
+  "general_industry",
+  "workplace_others",
+  "public_section",
+  "road_traffic_crash",
+  "bonfires",
+  "fireworks",
+  "spilled_liquids",
+  "public_playing_with_fire",
+  "assault",
+  "terrorism_or_war",
+  "public_others",
+  "hot_surface_section",
+  "hot_surface_cooking",
+  "household_heating",
+  "household_appliances",
+  "household_lighting",
+  "workplace_activity",
+  "other",
+  "hot_liquid_steam_or_gas_column",
+  "hot_liquid_steam_and_gas_cooking",
+  "bathing",
+  "washing",
+  "hot_liquid_steam_and_gas_workplace_activity",
+  "hot_liquid_steam_and_gas_others",
+  "electrical_column",
+  "setting_in_which_electrical_burn_occured_section",
+  "household",
+  "workplace",
+  "public",
+  "electrical_burn_related_to",
+  "high_voltage",
+  "low_voltage",
+  "lightining",
+  "electrical_others",
+  "chemical_section",
+  "chemical_household",
+  "chemical_workplace",
+  "public_workplace",
+  "section_break_mkwd",
+  "how_was_the_burn_caused",
+  "section_break_ezwo",
+  "self_harm",
+  "burning_assault",
+  "undetermined",
+  "section_break_x5qg",
+  "contributing_factors",
+  "column_break_bhrq",
+  "anatomy_of_burn_section",
+  "head_and_neck",
+  "trunk",
+  "arms",
+  "hands_and_waist",
+  "legs",
+  "head_and_neck_section",
+  "head_and_neck_scalp",
+  "head_and_neck_face",
+  "head_and_neck_eye",
+  "head_and_neck_neck",
+  "trunk_section",
+  "trunk_chest_and_abdomen",
+  "trunk_back_or_buttock",
+  "trunk_perineum_or_genetals",
+  "arms_section",
+  "arms_shoulder_or_axilla",
+  "arms_upper_arm_or_forearm",
+  "arms_elbow",
+  "hands_and_waist_section",
+  "hands_and_waist_wrist",
+  "hands_and_waist_back_of_hand",
+  "hands_and_waist_palm",
+  "hands_and_waist_finger_or_thumb",
+  "legs_section",
+  "legs_thigh_or_lower_leg",
+  "legs_knee",
+  "legs_ankle",
+  "legs_foot",
+  "section_break_sv8i",
+  "associated_injuries",
+  "total_body_surface_area_of_burn_at_admission_initial",
+  "associated_smoke_inhalation_injury",
+  "reason_for_suspecting_inhalation_injury",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_x1dm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "patient_name",
+   "fieldtype": "Data",
+   "label": "Patient Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "medical_record_number",
+   "fieldtype": "Data",
+   "label": "Medical Record Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date Of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "age_html",
+   "fieldtype": "HTML",
+   "label": "Age in Years",
+   "read_only": 1
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "label": "Contact",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sex",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender",
+   "reqd": 1
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "label": "Height (In inches)"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Data",
+   "label": "Weight (In Kg)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "label": "Marital Status",
+   "options": "\nSingle\nMarried\nSeparated\nDivorced\nwidow",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "cooking",
+   "fieldtype": "Check",
+   "label": "Cooking"
+  },
+  {
+   "default": "0",
+   "fieldname": "heating",
+   "fieldtype": "Check",
+   "label": "Heating"
+  },
+  {
+   "default": "0",
+   "fieldname": "lighting",
+   "fieldtype": "Check",
+   "label": "Lighting"
+  },
+  {
+   "default": "0",
+   "fieldname": "house_fire_single",
+   "fieldtype": "Check",
+   "label": "House fIre (single)"
+  },
+  {
+   "default": "0",
+   "fieldname": "house_fire_multiple",
+   "fieldtype": "Check",
+   "label": "House fire (multiple)"
+  },
+  {
+   "default": "0",
+   "fieldname": "playing_with_fire",
+   "fieldtype": "Check",
+   "label": "Playing with fire"
+  },
+  {
+   "default": "0",
+   "fieldname": "household_others",
+   "fieldtype": "Check",
+   "label": "others"
+  },
+  {
+   "default": "0",
+   "fieldname": "food_preparation",
+   "fieldtype": "Check",
+   "label": "Food preparation"
+  },
+  {
+   "default": "0",
+   "fieldname": "petrochemicals",
+   "fieldtype": "Check",
+   "label": "Petrochemicals"
+  },
+  {
+   "default": "0",
+   "fieldname": "textiles",
+   "fieldtype": "Check",
+   "label": "Textiles"
+  },
+  {
+   "default": "0",
+   "fieldname": "constructions",
+   "fieldtype": "Check",
+   "label": "Constructions"
+  },
+  {
+   "default": "0",
+   "fieldname": "agriculture",
+   "fieldtype": "Check",
+   "label": "Agriculture"
+  },
+  {
+   "default": "0",
+   "fieldname": "fireworksrelated",
+   "fieldtype": "Check",
+   "label": "Fireworks/related"
+  },
+  {
+   "default": "0",
+   "fieldname": "general_industry",
+   "fieldtype": "Check",
+   "label": "General industry"
+  },
+  {
+   "default": "0",
+   "fieldname": "workplace_others",
+   "fieldtype": "Check",
+   "label": "Others"
+  },
+  {
+   "default": "0",
+   "fieldname": "road_traffic_crash",
+   "fieldtype": "Check",
+   "label": "Road traffic crash"
+  },
+  {
+   "default": "0",
+   "fieldname": "bonfires",
+   "fieldtype": "Check",
+   "label": "Bonfires"
+  },
+  {
+   "default": "0",
+   "fieldname": "fireworks",
+   "fieldtype": "Check",
+   "label": "Fireworks"
+  },
+  {
+   "default": "0",
+   "fieldname": "spilled_liquids",
+   "fieldtype": "Check",
+   "label": "Spilled liquids"
+  },
+  {
+   "default": "0",
+   "fieldname": "public_playing_with_fire",
+   "fieldtype": "Check",
+   "label": "Playing with fire"
+  },
+  {
+   "default": "0",
+   "fieldname": "assault",
+   "fieldtype": "Check",
+   "label": "Assault"
+  },
+  {
+   "default": "0",
+   "fieldname": "terrorism_or_war",
+   "fieldtype": "Check",
+   "label": "Terrorism or war"
+  },
+  {
+   "default": "0",
+   "fieldname": "public_others",
+   "fieldtype": "Check",
+   "label": "Others"
+  },
+  {
+   "depends_on": "eval:doc.burn_cause == 'Hot Surface'",
+   "fieldname": "hot_surface_section",
+   "fieldtype": "Section Break",
+   "label": "Hot Surface"
+  },
+  {
+   "default": "0",
+   "fieldname": "hot_surface_cooking",
+   "fieldtype": "Check",
+   "label": "Cooking"
+  },
+  {
+   "default": "0",
+   "fieldname": "household_heating",
+   "fieldtype": "Check",
+   "label": "Household heating"
+  },
+  {
+   "default": "0",
+   "fieldname": "household_appliances",
+   "fieldtype": "Check",
+   "label": "Household appliances"
+  },
+  {
+   "default": "0",
+   "fieldname": "household_lighting",
+   "fieldtype": "Check",
+   "label": "Household lighting"
+  },
+  {
+   "default": "0",
+   "fieldname": "workplace_activity",
+   "fieldtype": "Check",
+   "label": "Workplace activity"
+  },
+  {
+   "default": "0",
+   "fieldname": "other",
+   "fieldtype": "Check",
+   "label": "Other"
+  },
+  {
+   "depends_on": "eval:doc.burn_cause == 'Hot Liquid Steam & Gas'\n",
+   "fieldname": "hot_liquid_steam_or_gas_column",
+   "fieldtype": "Section Break",
+   "label": "Hot Liquid, Steam or Gas"
+  },
+  {
+   "default": "0",
+   "fieldname": "hot_liquid_steam_and_gas_cooking",
+   "fieldtype": "Check",
+   "label": "Cooking"
+  },
+  {
+   "default": "0",
+   "fieldname": "bathing",
+   "fieldtype": "Check",
+   "label": "Bathing"
+  },
+  {
+   "default": "0",
+   "fieldname": "washing",
+   "fieldtype": "Check",
+   "label": "Washing"
+  },
+  {
+   "default": "0",
+   "fieldname": "hot_liquid_steam_and_gas_workplace_activity",
+   "fieldtype": "Check",
+   "label": "Workplace activity"
+  },
+  {
+   "default": "0",
+   "fieldname": "hot_liquid_steam_and_gas_others",
+   "fieldtype": "Check",
+   "label": "Others"
+  },
+  {
+   "depends_on": "eval:doc.burn_cause == 'Electrical'\n",
+   "fieldname": "electrical_column",
+   "fieldtype": "Section Break",
+   "label": "Electrical"
+  },
+  {
+   "fieldname": "setting_in_which_electrical_burn_occured_section",
+   "fieldtype": "Heading",
+   "label": "Setting in which electrical burn occured"
+  },
+  {
+   "default": "0",
+   "fieldname": "household",
+   "fieldtype": "Check",
+   "label": "Household"
+  },
+  {
+   "default": "0",
+   "fieldname": "workplace",
+   "fieldtype": "Check",
+   "label": "Workplace"
+  },
+  {
+   "default": "0",
+   "fieldname": "public",
+   "fieldtype": "Check",
+   "label": "Public"
+  },
+  {
+   "fieldname": "electrical_burn_related_to",
+   "fieldtype": "Heading",
+   "label": "Electrical burn related to"
+  },
+  {
+   "default": "0",
+   "fieldname": "high_voltage",
+   "fieldtype": "Check",
+   "label": "High voltage"
+  },
+  {
+   "default": "0",
+   "fieldname": "low_voltage",
+   "fieldtype": "Check",
+   "label": "Low voltage"
+  },
+  {
+   "default": "0",
+   "fieldname": "lightining",
+   "fieldtype": "Check",
+   "label": "Lightining"
+  },
+  {
+   "default": "0",
+   "fieldname": "electrical_others",
+   "fieldtype": "Check",
+   "label": "Other"
+  },
+  {
+   "default": "0",
+   "fieldname": "chemical_household",
+   "fieldtype": "Check",
+   "label": "Household"
+  },
+  {
+   "default": "0",
+   "fieldname": "chemical_workplace",
+   "fieldtype": "Check",
+   "label": "Workplace"
+  },
+  {
+   "default": "0",
+   "fieldname": "public_workplace",
+   "fieldtype": "Check",
+   "label": "Public"
+  },
+  {
+   "fieldname": "anatomy_of_burn_section",
+   "fieldtype": "Section Break",
+   "label": "Anatomy Of Burn"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.head_and_neck == 1",
+   "fieldname": "head_and_neck_scalp",
+   "fieldtype": "Check",
+   "label": "Scalp"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.head_and_neck == 1",
+   "fieldname": "head_and_neck_face",
+   "fieldtype": "Check",
+   "label": "Face"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.head_and_neck == 1",
+   "fieldname": "head_and_neck_eye",
+   "fieldtype": "Check",
+   "label": "Eye"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.head_and_neck == 1",
+   "fieldname": "head_and_neck_neck",
+   "fieldtype": "Check",
+   "label": "Neck"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.trunk == 1",
+   "fieldname": "trunk_chest_and_abdomen",
+   "fieldtype": "Check",
+   "label": "Chest and abdomen"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.trunk == 1",
+   "fieldname": "trunk_back_or_buttock",
+   "fieldtype": "Check",
+   "label": "Back or Buttock"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.trunk == 1",
+   "fieldname": "trunk_perineum_or_genetals",
+   "fieldtype": "Check",
+   "label": "Perineum or genetals"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.arms == 1",
+   "fieldname": "arms_shoulder_or_axilla",
+   "fieldtype": "Check",
+   "label": "Shoulder or Axilla"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.arms == 1",
+   "fieldname": "arms_upper_arm_or_forearm",
+   "fieldtype": "Check",
+   "label": "Upper arm or forearm"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.arms == 1",
+   "fieldname": "arms_elbow",
+   "fieldtype": "Check",
+   "label": "Elbow"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.hands_and_waist == 1",
+   "fieldname": "hands_and_waist_wrist",
+   "fieldtype": "Check",
+   "label": "Wrist"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.hands_and_waist == 1",
+   "fieldname": "hands_and_waist_back_of_hand",
+   "fieldtype": "Check",
+   "label": "Back of hand"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.hands_and_waist == 1",
+   "fieldname": "hands_and_waist_palm",
+   "fieldtype": "Check",
+   "label": "Palm"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.hands_and_waist == 1",
+   "fieldname": "hands_and_waist_finger_or_thumb",
+   "fieldtype": "Check",
+   "label": "Finger or thumb"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.legs == 1",
+   "fieldname": "legs_thigh_or_lower_leg",
+   "fieldtype": "Check",
+   "label": "Thigh or lower leg"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.legs == 1",
+   "fieldname": "legs_knee",
+   "fieldtype": "Check",
+   "label": "Knee"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.legs == 1",
+   "fieldname": "legs_ankle",
+   "fieldtype": "Check",
+   "label": "Ankle"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.legs == 1",
+   "fieldname": "legs_foot",
+   "fieldtype": "Check",
+   "label": "Foot"
+  },
+  {
+   "fieldname": "section_break_mkwd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "how_was_the_burn_caused",
+   "fieldtype": "Select",
+   "label": "How did the Burn Occured?",
+   "options": "\nUnintentional/Accidental\nIntentional\nUndetermined",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contributing_factors",
+   "fieldtype": "Select",
+   "label": "Contributing factors",
+   "options": "\nAlcohol\nDrug\nEpilepsy\nDementia\nPsychiatric illness\nPhysical Disability\nMental Disability\nSmoking\nNone\nOthers",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_bhrq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_sv8i",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "associated_injuries",
+   "fieldtype": "Select",
+   "label": "Associated Injuries",
+   "options": "\nNone\nAbdominal trauma\nChest trauma\nEye\nLong bone fractures\nSpinal cord injury\nTraumatic Brain Injury",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_body_surface_area_of_burn_at_admission_initial",
+   "fieldtype": "Select",
+   "label": "Total body surface area of Burn at admission (initial)",
+   "options": "\n5%\n10%\n15%\n20%\n25%\n30%\n35%\n40%\n45%\n50%\n55%\n60%\n65%\n70%\n75%\n80%\n85%\n90%\n95%\n100%",
+   "reqd": 1
+  },
+  {
+   "fieldname": "associated_smoke_inhalation_injury",
+   "fieldtype": "Select",
+   "label": "Associated smoke inhalation Injury",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.associated_smoke_inhalation_injury == 'Yes'",
+   "fieldname": "reason_for_suspecting_inhalation_injury",
+   "fieldtype": "Select",
+   "label": "Reason for suspecting inhalation injury",
+   "options": "\nClosed space burn\nSinging of hair\nFace burn\nSoot in mouth or sputum\nHoarseness\nStridor"
+  },
+  {
+   "fieldname": "column_break_7fxb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mrn_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MRN ID",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.burn_cause == 'Chemical'\n",
+   "fieldname": "chemical_section",
+   "fieldtype": "Section Break",
+   "label": "Chemical"
+  },
+  {
+   "default": "0",
+   "fieldname": "head_and_neck",
+   "fieldtype": "Check",
+   "label": "Head and Neck"
+  },
+  {
+   "default": "0",
+   "fieldname": "trunk",
+   "fieldtype": "Check",
+   "label": "Trunk"
+  },
+  {
+   "default": "0",
+   "fieldname": "arms",
+   "fieldtype": "Check",
+   "label": "Arms"
+  },
+  {
+   "default": "0",
+   "fieldname": "hands_and_waist",
+   "fieldtype": "Check",
+   "label": "Hands"
+  },
+  {
+   "depends_on": "eval:doc.head_and_neck == 1",
+   "fieldname": "head_and_neck_section",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.trunk == 1",
+   "fieldname": "trunk_section",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.arms == 1",
+   "fieldname": "arms_section",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.hands_and_waist == 1",
+   "fieldname": "hands_and_waist_section",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.legs == 1",
+   "fieldname": "legs_section",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "legs",
+   "fieldtype": "Check",
+   "label": "Legs"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Burn Admission Assessment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "depends_on": "eval:doc.fire_occur == 'Household'\n",
+   "fieldname": "household_section",
+   "fieldtype": "Section Break",
+   "label": "Household"
+  },
+  {
+   "depends_on": "eval:doc.fire_occur == 'Workplace'\n",
+   "fieldname": "workplace_section",
+   "fieldtype": "Section Break",
+   "label": "Workplace"
+  },
+  {
+   "depends_on": "eval:doc.fire_occur == 'Public'\n",
+   "fieldname": "public_section",
+   "fieldtype": "Section Break",
+   "label": "Public"
+  },
+  {
+   "fieldname": "section_break_zkap",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "burn_cause",
+   "fieldtype": "Select",
+   "label": "How was the Burn Caused?",
+   "options": "\nFlame\nHot Surface\nHot Liquid Steam & Gas\nElectrical\nChemical\nRadiation\nFriction\nCooling\nOthers",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.burn_cause == 'Flame'\n",
+   "fieldname": "fire_occur",
+   "fieldtype": "Select",
+   "label": "Where did the fire Occur?",
+   "options": "\nHousehold\nWorkplace\nPublic"
+  },
+  {
+   "fieldname": "column_break_rwhh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "height_scale",
+   "fieldtype": "HTML",
+   "label": "Height Scale"
+  },
+  {
+   "depends_on": "eval:doc.how_was_the_burn_caused == 'Intentional'\n",
+   "fieldname": "section_break_ezwo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "self_harm",
+   "fieldtype": "Check",
+   "label": "Self harm"
+  },
+  {
+   "default": "0",
+   "fieldname": "burning_assault",
+   "fieldtype": "Check",
+   "label": "Assault"
+  },
+  {
+   "default": "0",
+   "fieldname": "undetermined",
+   "fieldtype": "Check",
+   "label": "Undetermined"
+  },
+  {
+   "fieldname": "section_break_x5qg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "PAT-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "calculated_age",
+   "fieldtype": "Data",
+   "label": "Calculated Age",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Age",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "6_to_11",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "6 to 11"
+  },
+  {
+   "default": "0",
+   "fieldname": "11_to_17",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "11 to 17"
+  },
+  {
+   "fieldname": "weight_in_kg",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Weight In Kg",
+   "options": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n58\n59\n60\n61\n62\n63\n64\n65\n66\n67\n68\n69\n70\n71\n72\n73\n74\n75\n76\n77\n78\n79\n80\n81\n82\n83\n84\n85\n86\n87\n88\n89\n90\n91\n92\n93\n94\n95\n96\n97\n98\n99\n100\n101\n102\n103\n104\n105\n106\n107\n108\n109\n110\n111\n112\n113\n114\n115\n116\n117\n118\n119\n120\n121\n122\n123\n124\n125\n126\n127\n128\n129\n130\n131\n132\n133\n134\n135\n136\n137\n138\n139\n140\n141\n142\n143\n144\n145\n146\n147\n148\n149\n150\n151\n152\n153\n154\n155\n156\n157\n158\n159\n160\n161\n162\n163\n164\n165\n166\n167\n168\n169\n170\n171\n172\n173\n174\n175\n176\n177\n178\n179\n180\n181\n182\n183\n184\n185\n186\n187\n188\n189\n190\n191\n192\n193\n194\n195\n196\n197\n198\n199\n200"
+  },
+  {
+   "fieldname": "height_in_inches",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Height In inches",
+   "options": "Height"
+  },
+  {
+   "fieldname": "discharge_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Discharge Status",
+   "options": "Admitted\nDischarged",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_hospital_admission",
+   "fieldtype": "Date",
+   "label": "Date of Hospital Admission",
+   "reqd": 1
+  },
+  {
+   "fieldname": "time_of_hospital_admission",
+   "fieldtype": "Time",
+   "label": "Time of Hospital Admission",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_burn_injury",
+   "fieldtype": "Date",
+   "label": "Date of Burn Injury",
+   "reqd": 1
+  },
+  {
+   "fieldname": "time_of_burn_injury",
+   "fieldtype": "Time",
+   "label": "Time of Burn Injury",
+   "reqd": 1
+  },
+  {
+   "fieldname": "place_of_injury",
+   "fieldtype": "Select",
+   "label": "Place where Burn Injury Occured",
+   "options": "\nRural\nUrban",
+   "reqd": 1
+  },
+  {
+   "fieldname": "arrived_by",
+   "fieldtype": "Select",
+   "label": "Arrived By",
+   "options": "\nEmergency response team\nFamily and Friends\nSelf",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hospital",
+   "fieldtype": "Link",
+   "label": "Hospital",
+   "options": "Hospital",
+   "reqd": 1
+  },
+  {
+   "fieldname": "registry",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Registry",
+   "options": "Registry"
+  },
+  {
+   "fieldname": "respondent",
+   "fieldtype": "Select",
+   "label": "Respondent",
+   "options": "\nPatient (Himself / Herself)\nParent (Mother / Father)\nSpouse (Husband / Wife)\nSiblings (Brother / Sister)\nOthers",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mental_status",
+   "fieldtype": "Select",
+   "label": "Mental Status on Admission",
+   "options": "Awake\nResponding to verbal commands\nResponding to pain\nUnconscious",
+   "reqd": 1
+  },
+  {
+   "fieldname": "referred_case",
+   "fieldtype": "Select",
+   "label": "Referred Case from another facility",
+   "options": "Yes\nNo",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.referred_case == \"Yes\"",
+   "fieldname": "referral_source",
+   "fieldtype": "Select",
+   "label": "Referral source (If referred case)",
+   "options": "\nOther Hospital\nGP\nHakeem/Quacks\nUnknown"
+  },
+  {
+   "fieldname": "type_of_first_aid_before_coming",
+   "fieldtype": "Select",
+   "label": "Type of First aid received before coming to the Burn center",
+   "options": "None\nWater\nMedical Ointments or dressings\nHome remedies"
+  },
+  {
+   "fieldname": "wound_assessed_by_surgeon",
+   "fieldtype": "Select",
+   "label": "Wound assessed by a surgeon at the time of patient presentation",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.wound_assessed_by_surgeon == \"Yes\"",
+   "fieldname": "level_of_training_of_surgeon",
+   "fieldtype": "Select",
+   "label": "Describe the level of training of Surgeon ?",
+   "options": "\nConsultant Plast Surgeon\nConsultant General Surgeon\nBurn Team Registrar or Resident Generally,\nSurgery Registrar or Resident\nOther"
+  },
+  {
+   "fieldname": "previous_history_of_burns",
+   "fieldtype": "Select",
+   "label": "Previous history of Burns",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "no_of_people_burned_in_incident",
+   "fieldtype": "Select",
+   "label": "No of people burned in this incident",
+   "options": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21-50\nMore than 50."
+  },
+  {
+   "depends_on": "eval:(frappe.datetime.get_diff(frappe.datetime.nowdate(), doc.date_of_birth) / 365) >= 7",
+   "fieldname": "occupation_of_patient",
+   "fieldtype": "Select",
+   "label": "Occupation of Patient",
+   "options": "\nStudent\nProfessional (Doctor, Lawyer, Teacher, Banker, Engineer)\nManager/Executive Artist/Creative industry\nSales/Marketing Administrative/Clerical\nTransport Industry (Driver, Pilot etc.)\nBusiness/Self\nArmed Forces\nSportsman/Athlete\nService Industry (Hotels, Food service etc.)\nSkilled Laborer (Electrician, Plumber, Craftsman etc.)\nUnskilled Laborer (Construction, Factory worker, etc)\nRetired\nUnemployed\nHomemaker/Housewife\nNot Applicable\nother"
+  },
+  {
+   "fieldname": "under_five_patient_with",
+   "fieldtype": "Select",
+   "label": "If under 5 years of age, was the patient",
+   "options": "\nAlone\nWith an adult but unsupervised\nWith an adult and supervised\nWith other children under 18 years of age\nNot applicable\nUnknown"
+  },
+  {
+   "fieldname": "less_than_fifteen_education_status",
+   "fieldtype": "Select",
+   "label": "If the patient is less than 15 years old, does the child goes to school?",
+   "options": "\nYes\nNo\nNot applicable"
+  },
+  {
+   "fieldname": "less_than_fifteen_father_education_status",
+   "fieldtype": "Select",
+   "label": "If patient is less than 15 years what is the education of Father?",
+   "options": "None\nPrimary\nMatric\nFA\nBachelor\nPost graduate/ Professional\nNot applicable"
+  },
+  {
+   "fieldname": "less_than_fifteen_mother_education_status",
+   "fieldtype": "Select",
+   "label": "If patient is less than 15 years what is the education of Mother?",
+   "options": "None\nPrimary\nMatric\nFA\nBachelor\nPost graduate/ Professional\nNot applicable"
+  },
+  {
+   "fieldname": "column_break_pjnl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_kxml",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-03-15 16:22:16.841298",
+ "modified_by": "Administrator",
+ "module": "pills",
+ "name": "Burn Admission Assessment",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Healthcare Administrator",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "patient_name"
+}
